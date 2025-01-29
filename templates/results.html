@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Text & Summary</title>
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        } */
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #0d243b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background:#0d243b;
+        }
+        .logo{
+            margin-top: -60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center mb-4">
+        <img src="/static/img/keystride_logo.png" alt="Logo" class="logo">
+    </div>
+    <h1>Extracted Text & Summary</h1>
+    <div class="container">
+        <h2>📜 Extracted Text:</h2>
+        <pre>{{ extracted_text }}</pre>
+
+        <h2>📝 Summary:</h2>
+        <pre>{{ summary }}</pre>
+
+        <a href="/" class="button">🔙 Upload Another PDF</a>
+    </div>
+</body>
+</html>

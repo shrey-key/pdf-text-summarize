@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten PDF Extractor</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        h1 {
+            font-family: "DM Serif Text", serif;
+            text-align: center;
+            margin: 40px;
+
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background:#0d243b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #0d243b;
+        }
+        .logo{
+            margin-top: -60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center mb-4">
+        <img src="/static/img/keystride_logo.png" alt="Logo" class="logo">
+    </div>
+    <h1>Upload a PDF to summarize Handwritten Text</h1>
+
+    <div class="container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="application/pdf">
+            <button type="submit" class="button">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
